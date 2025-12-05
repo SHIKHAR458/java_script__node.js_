@@ -13,3 +13,9 @@ console.log(stringToNumber)
 console.log(typeof stringToNumber)
 console.log(typeof newAge) // par ye galat hai
 console.log(newNum)
+// 1 -> true, 0 -> false
+
+let islooged = 1
+console.log(typeof islooged)
+
+let ooged = Boolean

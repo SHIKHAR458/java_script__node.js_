@@ -25,11 +25,15 @@ const chai = () => {
 chai()
 
 
-
 const addTwo = (num1  , num2) => {
     return num1 + num2
 } 
 console.log(addTwo(3,4))
+
+const multiply_two = (num1 , num2) =>{
+    return num1*num2
+}
+console.log(multiply_two(4,6))
 
 // can also be written in one more way and is called implicit return
 //const addTwo = (num1 , num2) => num1 + num2

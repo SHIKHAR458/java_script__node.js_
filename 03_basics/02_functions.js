@@ -26,3 +26,11 @@ function handlingobjects(anyobject){
 }
 
 handlingobjects(user)
+
+
+const multiply_two = function(a,b){
+    return a*b
+}
+
+let value = multiply_two(9,4)
+console.log(`value of 9 multiplied by 4 is ${value}`)

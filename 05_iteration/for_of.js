@@ -85,3 +85,21 @@ new_array.forEach(printMe)
 myCoding.forEach((item) => {
   console.log(item.languageName)
 })
+
+//----filter operations
+const myNums = [1,2,3,4,5,6,7,8,9,10]
+
+//const new_nums = myNums.filter((num) => num > 4 )
+////const new_nums = myNums.filter((num) => { -------yaha pe return use karna padega 
+// return num > 4            -------------------// kyuki paranthesis hai
+//})
+//console.log(new_nums)
+
+const newNums = []
+myNums.forEach((num) => {
+  if (num > 4){
+    newNums.push(num)
+  }
+})
+
+console.log(newNums)

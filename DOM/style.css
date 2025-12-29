@@ -1,0 +1,13 @@
+h1 {
+    color: blueviolet;
+    text-decoration: line-through;
+}
+
+body {
+    background-color: pink;
+}
+
+button {
+    background-color: blue;
+    color : wheat;
+}

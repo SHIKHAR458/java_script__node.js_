@@ -1,2 +1,2 @@
-console.log("hello");
-alert("DANGER")
+let heading = document.getElementById("heading")
+console.log(heading)

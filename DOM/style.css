@@ -1,17 +1,6 @@
-.heading {
-    color: blueviolet;
-    text-decoration: line-through;
-}
-.heading2 {
-    color: rgb(22, 162, 148);
-    text-decoration: line-through;
-}
-
-body {
-    background-color: pink;
-}
-
-button {
-    background-color: blue;
-    color : wheat;
+div {
+    height: 100px;
+    width: 100px;
+    background-color: dodgerblue;
+    color: black;
 }

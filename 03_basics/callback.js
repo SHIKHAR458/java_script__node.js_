@@ -56,13 +56,12 @@ let promise1 = new Promise((resolve, reject) => {
     console.log("i am a promise")
     reject("error occured")
 })
-*/
 
 function getData(dataId , getNextData){
     return new Promise((resolve , reject) => {
         setTimeout(() => {
             console.log("data" , dataId);
-            resolve("success")
+            reject("success")
             if(getNextData){
                getNextData()
             }
@@ -70,6 +69,22 @@ function getData(dataId , getNextData){
     })
 }
 
-let prom = getData(123)
-
+ let prom = getData(123)
 console.log(prom)
+*/
+
+const getPromise = () => {
+    return new Promise((resolve,reject) =>{
+        console.log("I am a promise")
+        reject("success")
+    })
+}
+
+let promise = getPromise()
+promise.then((res) => {
+    console.log("promise fulfilled", res)
+})
+
+promise.catch((err) => {
+    console.log("rejected", err)
+})

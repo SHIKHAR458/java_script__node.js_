@@ -45,8 +45,7 @@ hiprintkar("hi" , () => {
     hiprintkar("bye",() => {
         hiprintkar("chalhat")
     })
-}) */
-
+})
 let promise = new Promise((resolve, reject) => {
     console.log("i am a promise")
     resolve("no error occured")
@@ -57,3 +56,20 @@ let promise1 = new Promise((resolve, reject) => {
     console.log("i am a promise")
     reject("error occured")
 })
+*/
+
+function getData(dataId , getNextData){
+    return new Promise((resolve , reject) => {
+        setTimeout(() => {
+            console.log("data" , dataId);
+            resolve("success")
+            if(getNextData){
+               getNextData()
+            }
+        }, 5000)
+    })
+}
+
+let prom = getData(123)
+
+console.log(prom)

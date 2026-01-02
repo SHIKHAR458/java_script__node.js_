@@ -72,7 +72,7 @@ function getData(dataId , getNextData){
 
  let prom = getData(123)
 console.log(prom)
-*/
+
 
 const getPromise = () => {
     return new Promise((resolve,reject) =>{
@@ -88,4 +88,20 @@ promise.then((res) => {
 
 promise.catch((err) => {
     console.log("rejected", err)
+})
+    */
+function getData(dataId) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("data", dataId);
+            resolve("success");
+        }, 2000);
+    });
+}
+
+
+getData(1).then((res) => {
+    return getData(2)
+}).then((res) => {
+    console.log(res)
 })

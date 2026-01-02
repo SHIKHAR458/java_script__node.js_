@@ -2,7 +2,7 @@ function asyncFunc(){
     return new Promise((resolve , reject) => {
         setTimeout(() => {
             console.log("some data1")
-            resolve("failure")
+            resolve("success")
         }, 3000);
     })
 }
@@ -10,7 +10,7 @@ function asyncFunc1(){
     return new Promise((resolve , reject) => {
         setTimeout(() => {
             console.log("some data2")
-            resolve("sfailure")
+            resolve("ssuccess")
         }, 3000);
     })
 }

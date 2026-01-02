@@ -15,12 +15,10 @@ function asyncFunc1(){
     })
 }
 console.log("fetching data 1..")
-let p1 = asyncFunc()
-p1.then((res) => {
+    asyncFunc().then((res) => {
     console.log(res)
     console.log("fetching data 2..")
-    let p2 = asyncFunc1()
-    p2.then((res) => {
+    asyncFunc1().then((res) => {
     console.log(res)
 }
 )
